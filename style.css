@@ -1,18 +1,72 @@
+body {
+    background-color: black;
+}
 .form-box {
     margin-top: 120px;
     margin-left: 550px;
     width: 400px;
     height: 450px;
-    background: red;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background: black;
     font-family: 'Alkatra', cursive;
     border-radius: 20px;
+    box-shadow: 1px 1px 7px 5px whitesmoke;
 }
-h1 {
-    margin-left: 60px;
-    margin-bottom: 250px;
-    font-weight: bold;
 
+form {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+h1 {
+    margin-right: 170px;
+    margin-top: 60px;
+    color: wheat;
+    text-shadow: 2px 2px 50px white;
+    animation: color-change 2s infinite;
+}
+@keyframes color-change {
+    50% { color: white; }
+}
+
+input[type="email"] {
+    width: 220px;
+    height: 20px;
+    border-radius: 3px;
+    border: none;
+    margin-right: 45px;
+    margin-top: 12px;
+    font-family: 'Alkatra', cursive;
+    box-shadow: 1px 1px 7px 2px wheat;
+    background-color: white;
+}
+
+input[type="password"] {
+    width: 220px;
+    height: 20px;
+    border-radius: 3px;
+    border: none;
+    margin-top: 30px;
+    margin-right: 45px;
+    font-family: 'Alkatra', cursive;
+    box-shadow: 1px 1px 7px 2px wheat;
+    background-color: white;
+}
+
+input[type="submit"] {
+    width: 150px;
+    height: 25px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 182px;
+    font-family: 'Alkatra', cursive;
+    box-shadow: 1px 1px 7px 2px wheat;
+    font-weight: bold;
+}
+input[type="submit"]:hover {
+    color: wheat;
+    background-color: rgb(31, 31, 31);
+    box-shadow: 1px 1px 7px 2px rgb(236, 216, 180);
+    transition: all 1s;
 }
