@@ -1,9 +1,11 @@
 body {
     background-color: black;
 }
+
 .form-box {
-    margin-top: 120px;
-    margin-left: 550px;
+    margin-top: 140px;
+    margin-left: 515px;
+    position: fixed;
     width: 400px;
     height: 450px;
     background: black;
@@ -22,9 +24,9 @@ form {
 h1 {
     margin-right: 170px;
     margin-top: 60px;
-    color: wheat;
+    color: rgb(219, 181, 110);
     text-shadow: 2px 2px 50px white;
-    animation: color-change 2s infinite;
+    animation: color-change 3s infinite;
 }
 @keyframes color-change {
     50% { color: white; }
@@ -69,4 +71,51 @@ input[type="submit"]:hover {
     background-color: rgb(31, 31, 31);
     box-shadow: 1px 1px 7px 2px rgb(236, 216, 180);
     transition: all 1s;
+}
+
+.vl {
+    border-left: 6px solid rgb(228, 226, 226);
+    height: 230px;
+    margin-left: 220px;
+    margin-top: -8px;
+}
+.sign-in-button {
+    width: 130px ;
+    height: 150px ;
+    background-color: rgb(239, 234, 227);
+    margin-left: 157px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 10px 2px wheat;
+    border: 1px solid black;
+}
+h2 {
+   color: black;
+   animation: color-changing 4s infinite;
+   font-family: 'Alkatra', cursive;
+   font-size: 25px;
+}
+@keyframes color-changing {
+    50% { color: rgb(101, 1, 1) }
+}
+
+.vl2 {
+    border-left: 6px solid rgb(228, 226, 226);
+    height: 400px;
+    margin-left: 1200px;
+    margin-top: -380px;
+}
+.forgotten-password-button {
+    width: 150px ;
+    height: 180px ;
+    background-color: rgb(239, 234, 227);
+    margin-left: 1130px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 10px 2px wheat;
+    border: 1px solid black;
+}
+h3 {
+    color: black;
+    font-size: 20px;
+    font-family: 'Alkatra', cursive;
+    animation: color-changing 4s infinite;
 }
